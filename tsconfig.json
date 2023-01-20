@@ -13,11 +13,13 @@
 		"esModuleInterop": true,
 		"allowSyntheticDefaultImports": true,
 		"resolveJsonModule": true,
+		"noImplicitAny": false,
 		"sourceMap": true,
 		"baseUrl": "./",
 		"types": ["vite/client"],
 		"paths": {
-			"@/*": ["src/*"]
+			"@/*": ["src/*"],
+			"@c/*": ["src/components/*"]
 		},
 		"lib": ["esnext", "dom", "dom.iterable", "scripthost"]
 	},

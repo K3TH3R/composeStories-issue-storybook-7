@@ -1,0 +1,17 @@
+import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs'
+
+import Page from './Page.vue'
+import * as Stories from './Page.stories'
+
+<Meta of={Stories} />
+
+# Page
+
+<Canvas>
+  <Story id="example-page--logged-in" />
+  <Story id="example-page--logged-out" />
+</Canvas>
+
+# Component API
+
+<ArgsTable of={Page} />

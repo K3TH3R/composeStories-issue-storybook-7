@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MyHeader from './Header.vue'
+import MyHeader from '@c/Header'
 import './page.css'
 
 interface Props {

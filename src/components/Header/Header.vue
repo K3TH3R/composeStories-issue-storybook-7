@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import BasicButton from './BasicButton.vue'
+import BasicButton from '@c/BasicButton'
 import './header.css'
 
 interface Props {

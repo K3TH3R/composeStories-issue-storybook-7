@@ -1,0 +1,19 @@
+import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs'
+
+import BasicButton from './BasicButton.vue'
+import * as Stories from './BasicButton.stories'
+
+<Meta of={Stories} />
+
+# Button
+
+<Canvas>
+  <Story id="components-basic-button--primary" />
+  <Story id="components-basic-button--secondary" />
+  <Story id="components-basic-button--large" />
+  <Story id="components-basic-button--small" />
+</Canvas>
+
+# Component API
+
+<ArgsTable of={BasicButton} />
