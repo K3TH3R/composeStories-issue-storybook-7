@@ -16,7 +16,7 @@
 		"noImplicitAny": false,
 		"sourceMap": true,
 		"baseUrl": "./",
-		"types": ["vite/client"],
+		"types": ["vite/client", "vitest/globals"],
 		"paths": {
 			"@/*": ["src/*"],
 			"@c/*": ["src/components/*"]
