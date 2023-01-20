@@ -1,10 +1,6 @@
 <script setup lang="ts">
-import { useI18n } from "vue-i18n";
 import HelloWorld from "./components/HelloWorld.vue";
-import LocaleSelect from "./components/LocaleSelect.vue";
 import links from "@/data/links.json";
-
-const { t } = useI18n();
 
 const getImgURL = (src: string) => {
   return new URL(`./assets/svg/${src}.svg`, import.meta.url).href;
@@ -12,7 +8,6 @@ const getImgURL = (src: string) => {
 </script>
 
 <template>
-  <locale-select></locale-select>
   <a
     v-for="{ alt, src, href } in links"
     :key="alt"
@@ -21,7 +16,7 @@ const getImgURL = (src: string) => {
   >
     <img class="logo" :alt="alt" :src="getImgURL(src)" />
   </a>
-  <HelloWorld :msg="t('welcome')" />
+  <HelloWorld msg="Hello World" />
 </template>
 
 <style lang="scss">
